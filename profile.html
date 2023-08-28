@@ -1,0 +1,81 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="myproject/profile.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <form action="user_form" method="post">
+    <!-- {% csrf_token %} -->
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" src="" width="90"><span class="font-weight-bold"></span><span class="text-black-50"></span><span></span></div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h6 class="text-right">Edit your profile</h6>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6"><label class="labels">Name</label><input type="text" class="form-control" placeholder="first name" value="">
+                        </div>
+                        <br>
+                        <div class="col-md-6"><label class="labels">Surname</label><input type="text" class="form-control" value="" placeholder="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">Headline</label><input type="text" class="form-control" placeholder="headline" value="">
+                        </div>
+                        <br>
+                        <div class="col-md-12"><label class="labels">Current position</label><input type="text" class="form-control" placeholder="headline" value="">
+                        </div>
+                        <br>
+                        <div class="col-md-12"><label class="labels">Education</label><input type="text" class="form-control" placeholder="education" value="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Country</label><input type="text" class="form-control" placeholder="country" value="">
+                        </div>
+                        <br>
+                        <div class="col-md-6"><label class="labels">State/Region</label><input type="text" class="form-control" value="" placeholder="state"></div>
+                    </div>
+                    <br>
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+                </div>
+            </div>
+        </form>
+            <br>
+            <div class="col-md-4">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center experience"><span>Edit Experience</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;</span></div>
+                    <a href="https://twitter.com/"><div class="d-flex flex-row mt-3 exp-container"><img src="https://static.dezeen.com/uploads/2023/07/x-logo-twitter-elon-musk_dezeen_2364_col_0.jpg" width="45" height="45">
+                        <div class="work-experience ml-1"><span class="font-weight-bold d-block"></span><span class="d-block text-black-50 labels">Twitter.com</span><span class="d-block text-black-50 labels"></span></div>
+                    </div></a>
+                    <a href="https://www.facebook.com/">
+                    <hr>
+                    <div class="d-flex flex-row mt-3 exp-container"><img src="https://img.icons8.com/color/100/000000/facebook.png" width="45" height="45">
+                        <div class="work-experience ml-1"><span class="font-weight-bold d-block"></span><span class="d-block text-black-50 labels">Facebook.com</span><span class="d-block text-black-50 labels"></span></div>
+                    </div>
+                    </a>
+                    <hr>
+                    <a href="https://www.google.com/">
+                    <div class="d-flex flex-row mt-3 exp-container"><img src="https://img.icons8.com/color/50/000000/google-logo.png" width="45" height="45">
+                        <div class="work-experience ml-1"><span class="font-weight-bold d-block"></span><span class="d-block text-black-50 labels">Google.com</span><span class="d-block text-black-50 labels"></span></div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>  
+    </form> 
+</body>
+</html>
